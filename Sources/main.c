@@ -40,6 +40,9 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 
+
+void piola(int signal);
+
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
 	int y=0,   a=0, k=0, 
@@ -103,29 +106,15 @@ void main(void)
 	  	  	  		state = 0;
 	  	  	  		Cpu_Delay100US(200000);
 	  	  	  	}
-	  	  	/*  val=c;
-	  	  	  if((val>20)&&(viejovalor<=20))
-	  	  	  {
-	  	  		  k=20-k;
-	  	  		  Cpu_Delay100US(10);
-	  	  	  }
-	  	  	  
-	  	  	  viejovalor=val;	  	  	  
-		  
-	  	  	  if(k==20)
-	  	  	  {
-	  	  		  Muneca_SetRatio8(22);
-	  	  	  }
-	  	  	  
-	  	  	  else
-	  	  	  {
-	  	  		  Muneca_SetRatio8(2);
-	  	  	  */
-	  	  	  
-  
-  
+	  	  	 	  	  
+    
 	  	  	  
   }
+  
+  void piola(int signal)
+  	  	  	  {
+	  	  	  Dedos_SetRatio8(10);
+  	  	  	  }
   
   
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
